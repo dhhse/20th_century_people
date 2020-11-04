@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+  <fileDesc>
+    <title/>
+    <author>П.Н. Янина</author>
+    <publisher>
+      <name>П.Н. Янина</name>
+    </publisher>
+  </fileDesc>
+  <person>
+    <idno type="id">troitskiyaa.xml</idno>
+    <persName>
+      <Last_name>Троицкий</Last_name>
+      <First_name>Адриан</First_name>
+      <Middle_name>Александрович</Middle_name>
+    </persName>
+    <event type="birth" when="1872-06-12">
+      <place>село Билярск Алексеевский район Казанской губернии</place>
+	#В базе Новомученников место рождения - село Билярское Чистопольского уезда Казанской губернии
+    </event>
+	<event type="education" when="1910">
+		<Education_speciality>священник</Education_speciality>
+		<Education_entity>Казанская Духовная семинария</Education_entity>
+	<event/>
+	<event type="job">
+		<Job_place>Троицкий храм в селе Михайловском Царевококшайского уезда Казанской губернии</Job_place>
+		<Job_title>настоятель Троицкого храма</Job_title>
+		<Start_Year>1910</Start_Year>
+		<End_Year>1937<End_Year/>
+	<event/>
+    <event type="arrest" when="1937-12-28">
+    </event>
+    <event type="trial" when="1937-02-13"> 
+      <text> Среди прочего его обвиняли в создании контрреволюционной группы и обложении прихожан непомерным налогом.
+	  13 февраля тройка НКВД приговорила отца Адриана к расстрелу</text>
+	</event>
+	<event type="Confession"> 
+		<Raw_Confession>не признает</Raw_Confession>
+      <text>Отец Адриан не признал себя виновным, сказав: «Никакой контрреволюционной работы я не проводил. 
+		Хлебными налогами верующих я не обкладывал. Хлеб собирался по решению общины верующих»</text>
+	</event>
+	</event type="imprisonment">
+	  <place>тюрьма города Йошкар-Ола</place>
+    </event>
+    <event type="death" cause="execution" when="1938-02-15">
+		<place>Марийская АССР</place>
+    </event>
+  </person>
+  <biography>
+    <text>В 1913 году отец Адриан был назначен старшим помощником Царевококшайского благочинного и вскоре возведен в сан протоиерея.
+	После прихода к власти большевиков отец Адриан был в 1918 году арестован по подозрению в участии в Княжнинском восстании. 
+	Однако обвинение не подтвердилось, и священник после двух недель нахождения под арестом был освобожден</text>
+  </biography>
+  <external_sources>
+    <source type="external_database_entry" ref="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+	Запись в базе Новомученников</source>
+    <source type="https://base.memo.ru/person/show/533747">Запись в базе Международного Мемориала</source>
+  </external_sources>
+</biodes>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+  <fileDesc>
+    <title/>
+    <author>П.Н. Янина</author>
+    <publisher>
+      <name>П.Н. Янина</name>
+    </publisher>
+  </fileDesc>
+  <person>
+    <idno type="id">sandratskayamk.xml</idno>
+    <persName>
+      <Last_name>Сандрацкая</Last_name>
+      <First_name>Мария</First_name>
+      <Middle_name>Карловна</Middle_name>
+    </persName>
+    <event type="birth" when="1898">
+		</place>Херсонская губ., г. Одесса</place>
+    </event>
+	<event type="education">
+		<Education_entity>Коммунистический университет имени Я. М. Свердлова</Education_entity>
+	<event/>
+	#Комвуз указан только в каталоге мемуаров, в базе данных жертв полит. репрессий образование указано как среднее
+	<event type="party">
+		<Raw_Party>ВКП(б)</Raw_Party>
+	<event/>
+	<event type="job">
+		<Job_place>Выборгский райком</Job_place>		
+		<Job_title>III-й секретарь Выборгского райкома</Job_title>
+	<event/>
+    <event type="arrest" when="1937-10-09"> #В каталоге мемуаров дата ареста - 29 октября 1937
+      <place>Ленинград</place>
+    </event>
+    </event type="imprisonment">
+		<place>Ленинградская Арсенальная тюрьма</place>
+		<place>Томск, Ахунская ИТК №9</place>
+		<place>Сиблаг, Яйский лагерный пункт</place>
+    </event>
+    <event type="release" when="1947-12">
+    </event>
+	</event type="rehabilitation" when="1955">
+	</event>
+  </person>
+  <biography>
+    <text>Окончание семи классов гимназии в Одессе в июне 1914 г. Медицинские курсы. 
+	Медсестра 12-й армии в Карпатах. Февральская революция, демобилизация, возвращение в Одессу. 
+	Переезд к сестре матери в Москву, работа в литературно-издательском отделе Наркомпроса. 
+	В 1920-е годы работа в женотделе Одесского губкома партии, в комиссии ГубЧК по борьбе с беспризорностью. 
+	Направление на учебу в Комвуз им. Я. М.Свердлова в Москву, знакомство и дружба с В. И. Горбом. 
+	Окончание Комвуза и работа в Донбассе. Замужество и переезд в Ленинград. 
+	Работа в парторганизациях заводов и фабрик, в Петроградском и Выборгском райкомах партии</text>
+  </biography>
+  <external_sources>
+    <source type="external_database_entry" ref="https://memoirs.memo.ru/memoir/show/id/160">Запись в каталоге мемуалов Мемориала</source>
+    <source type="external_database_entry" ref="https://base.memo.ru/person/show/2934249">Запись в базе жертв полит. репрессий</source>
+  </external_sources>
+</biodes>
+
+<biodes version="1.0.1">
+  <fileDesc>
+    <title/>
+    <author>П.Н. Янина</author>
+    <publisher>
+      <name>П.Н. Янина</name>
+    </publisher>
+  </fileDesc>
+  <person>
+    <idno type="id">luzyaninnn.xml</idno>
+    <persName>
+      <surname>Лузянин</surname>
+      <firstname>Николай</firstname>
+      <patronym>Николаевич</patronym>
+    </persName>
+    <event type="birth" when="1922-12-22">
+      <place>Новосибирская обл., Пушкино-Троицкий район, с. Апсагачево</place> #Варианты написания места рождения - деревня Абсогачево, Апсагач; район - Пышкино-Троицкий
+    </event>
+    <event type="military conscription" when="1944">
+      <place>Троицкий РВК, Новосибирская обл.</place>
+    </event>
+	<event type="Military_rank">
+		<Raw_Military_rank>лейтенант</Raw_Military_rank> #Варианты звания - красноармеец, гв. рядовой
+		<Last_military_unit>84 сп</Last_military_unit> #Варианты последнего места службы - 33 гв. сд; пермской жд
+	</event>
+    <event type="missing" couse="попал в плен" when="1944-08-27"> #Вариант даты - 21.08.1944; вариант причины - пропал без вести, осужден
+		<place>Куртовяны</place>
+	</event>
+	 </event type="imprisonment">
+		<place>Шталаг IB</place>
+		<camp_number>53192</camp_number>
+    </event>
+  </person>
+  <external_sources>
+    <source type="external_database_entry" ref="https://obd-memorial.ru/html/search.htm?f=%D0%9B%D1%83%D0%B7%D1%8F%D0%BD%D0%B8%D0%BD&n=%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9&s=%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87&y=1922&r=">
+	</source>
+    <source type="external_database_entry" ref="https://pamyat-naroda.ru/heroes/memorial-chelovek_donesenie54299842/?backurl=%2Fheroes%2F%3Fadv_search%3Dy%26last_name%3D%D0%9B%D1%83%D0%B7%D1%8F%D0%BD%D0%B8%D0%BD%26first_name%3D%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%26middle_name%3D%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87%26date_birth_from%3D1922%26static_hash%3D9b0897399d881d7c908f497e86831dff%26group%3Dall%26types%3Dpamyat_commander%3Anagrady_nagrad_doc%3Anagrady_uchet_kartoteka%3Anagrady_ubilein_kartoteka%3Apamyat_voenkomat%3Apotery_vpp%3Apamyat_zsp_parts%3Akld_polit%3Akld_upk%3Akld_vmf%3Apotery_doneseniya_o_poteryah%3Apotery_gospitali%3Apotery_utochenie_poter%3Apotery_spiski_zahoroneniy%3Apotery_voennoplen%3Apotery_iskluchenie_iz_spiskov%3Apotery_kartoteki%3Asame_doroga%26page%3D1%26rank%3D%D1%80%D1%8F%D0%B4%D0%BE%D0%B2%D0%BE%D0%B9">Запись в
+    </source>
+  </external_sources>
+</biodes>
