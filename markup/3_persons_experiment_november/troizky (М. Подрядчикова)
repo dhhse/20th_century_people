@@ -1,0 +1,44 @@
+<person main_id="10">   
+	<id type="base">533747</id>
+	<main_source>https://base.memo.ru/person/show/533747</main_source> <!-- источник по умолчанию -->
+    	<full_name> 
+		<raw_full_name>Троицкий Андриян (Андреян) Александрович</raw_full_name> 
+		<first_name>Андриян</first_name>
+		<middle_name>Александрович</middle_name>
+		<last_name>Троицкий</last_name>
+	</Full_name>
+	<Gender>male</Gender> 
+	<nationality>русский</nationality>
+	<citizenship>СССР</citizenship>
+	<education level="higher">  
+		<entity source="martyrs" city="Чебоксары">Чебоксарское духовное училище</entity>
+		<entity source="martyrs">Казанская духовная семинария</entity> 
+	</education>
+	<occupation>священник</occupation> 
+	<event type="birth" when="1872-06-12" source="martyrs">
+	<place>
+		<Country>Российская империя</Country>  
+		<Region type="gubernia">Казанская</Region>  
+		<!-- для района надо еще -->
+		<City type="selo">Билярское</City>
+	</place>
+	</event>
+	<event type="arrest" when="1937-12-28">	  
+	</event>
+	<event type="judgement">	 
+		<judgement execution_date="1938-12-13">ВМН</judgement>
+	</event>
+	<event type="death" place="Марийская АССР" when="1938-12-13">	 
+		Расстрелян 13 декабря 1938, в Марийской АССР.
+	</event>
+	<event type="death" place="Марийская АССР" when="1938-02-15" source="martyrs">	 
+		Протоиерей Адриан Троицкий был расстрелян 15 февраля 1938 года и погребен в общей безвестной могиле.
+	</event>
+	<extra_sources>
+		<source name="martyrs">http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3</source>
+	</extra_sources>
+	<mentioned>
+		<person type="husband" base_id="2738133">Горб Василий Иванович</person> 
+	</mentioned>
+	<published_source>Книга памяти Республики Татарстан</published_source>
+</person> 
