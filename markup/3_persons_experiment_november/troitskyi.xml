@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+    <fileDesc>
+        <title/>
+        <author>В.А. Воробьева</author>
+        <publisher>
+            <name>В.А. Воробьева</name>
+        </publisher>
+    </fileDesc>
+    <person>
+        <idno type="id">troitsky.xml</idno>
+        <persName>
+            <raw_full_name>ТРОИЦКИЙ АНДРИЯН АЛЕКСАНДРОВИЧ</raw_full_name> 
+            <surname>Троицкий</surname>
+            <firstname type = "main">Андриян</firstname>
+            <firstname>Адриан</firstname>
+            <firstname>Андреян</firstname>
+            <patronym>Александрович</patronym>
+        </persName>
+      <gender>мужчина</gender>
+      <nationality code="rus">русский</nationality>
+     <life_events>
+     <event type="birth" when="1872-06-12">
+       <place>Казанская губ., Алексеевский р-н., с. Билярск</place>
+        <place>Казанская губ., Чистопольский уезд, с. Билярское</place>
+        </event>
+     <event type="job" when="1893" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+		<Job_place>Соляновская церковноприходская школа</Job_place>
+		<Job_title>преподаватель</Job_title>
+       </event>
+      <event type="job" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+		<Job_place>Михаило-Архангельский храм в Чебоксарах</Job_place>
+		<Job_title>псаломщик</Job_title>
+       </event>
+    <event type="conscription" when="1897" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+       </event>
+    <event type="job" when="1899" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+		<Job_place>Покровский храм в Чебоксарах</Job_place>
+		<Job_title>псаломщик</Job_title>
+       </event>
+      <event type="job" from="1910" to="1937" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+		<Job_place>Троицкий храм в селе Михайловское</Job_place>
+		<Job_title>настоятель</Job_title>
+       </event>
+    <event type="arrest" when="1918" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+      </event>
+    <event type="arrest" when="1937-12-28" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+      </event>
+    <event type="imprisonment" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+    <place>тюрьма города Йошкар-Ола</place>
+      </event>
+    <event type="judgement" when="1937-02-13" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3"> 
+      </event>
+    <event type="death" cause="execution" when="1938-02-15" source="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3">
+      </event>
+    <event type="death" cause="execution" when="1938-12-13" source="https://base.memo.ru/person/show/533747">
+    <place>Марийская АССР</place>
+      </event>
+  </life_events>
+  </person>
+  <external_sources>
+    <source type="external_database_entry"
+      ref="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3"
+      > Запись в житиях Новомучеников</source>
+    <source type="external_database_entry" base="#memo"
+      ref="https://base.memo.ru/person/show/533747">Запись в базе Межднародного Мемориала</source>
+  </external_sources>
+</biodes>
