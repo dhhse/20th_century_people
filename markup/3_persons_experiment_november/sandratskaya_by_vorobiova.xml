@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+  <fileDesc>
+    <title/>
+    <author>В.А. Воробьева</author>
+    <publisher>
+      <name>В.А. Воробьева</name>
+    </publisher>
+  </fileDesc>
+  <person>
+    <idno type="id">sandratskaya</idno>
+    <persName>
+      <surname>Сандрацкая</surname>
+      <firstname>Мария</firstname>
+      <patronym>Карловна</patronym>
+    </persName>
+    <Gender>женщина</Gender>
+    <life_events>
+      <event type="birth" when="1898">
+        <place>Херсонская губ., г. Одесса</place>
+      </event>
+      <event type="party" source="https://base.memo.ru/person/show/2934249">
+		    <Raw_Party>ВКП(б)</Raw_Party>
+	    <event/>
+      <event type="education" source="https://memoirs.memo.ru/memoir/show/id/160">
+		    <entity>Комвуз им. Я.М. Свердлова</entity>
+	    <event/>
+      <event type="job" source="https://base.memo.ru/person/show/2934249">	
+		    <Job_title>III-й секретарь Выборгского райкома, ок. комвуз им.Свердлова</Job_title>
+	    <event/>
+      <event type="arrest" when="1937-10-09" source="https://base.memo.ru/person/show/2934249">
+        <place>г. Ленинград</place>
+      </event>
+      <event type="judgement" when="1937-10-09" source="https://base.memo.ru/person/show/2934249">	 
+        <court>ОС НКВД СССР</court>
+        <judgement years="8">8 лет ИТЛ</judgement>
+      </event>
+      <event type="imprisonment" source="https://base.memo.ru/person/show/2934249">
+        <place>г. Томск, Ахунская ИТК №9</place>
+        <place>Яйское отделение Сиблага</place>
+      </event>
+      <event type="rehabilitation" when="1955-08-13" source="https://base.memo.ru/person/show/2934249"> 
+        <court>ВК ВС СССР</court>
+      </event>
+      </life_events>
+  </person>
+  <external_sources>
+    <source type="external_database_entry" base="#memo"
+      ref="https://base.memo.ru/person/show/2934249">Запись в базе Международного Мемориала</source>
+    <source type="memoirs"
+      ref="https://memoirs.memo.ru/memoir/show/id/160">Запись в каталоге воспоминаний архива Мемориала</source>
+  </external_sources>
+</biodes>    
