@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+	<fileDesc>
+		<title/>
+		<author>Ю.В. Кожевникова</author>
+		<publisher>
+			<name>Ю.В. Кожевникова</name>
+		</publisher>
+	</fileDesc>
+	<person>
+		<idno type="id">troitskyi.xml</idno>
+		<persName>
+			<surname>Троицкий</surname>
+			<firstname>Андриян</firstname>
+			<firstname>Андреян</firstname>
+			<patronym>Александрович</patronym>
+		</persName>
+		<event type="birth" when="12.06.1872">
+			<place_of_birth source="fond.ru">
+				<country>Российская империя</country>
+				<region>Казанская губерния</region>
+				<county>Чистопольский уезд</county>
+				<district>Алексеевский р-н</district>
+				<city>Билярск</city>
+			</place_of_birth>
+		</event>
+		<event type="education">
+			<place_of_education> Чебоксарское духовное училище </place_of_education>
+			<place_of_education> Чебоксарское городское училище </place_of_education>
+			<place_of_education> Соляновская церковноприходская школа </place_of_education>
+			<place_of_education> Казанская духовная семинария </place_of_education>
+		</event>
+		<service> священник </service>
+		<event type="military_service" from ="1897" to = "1899">
+		</event>
+		<event type="work" from ="1899" to = "1902">
+			<place>Чебоксары, Покровский храм</place>
+			<work_title> псаломщик </work_title>
+		</event>
+		<event type="work" from ="1904" to = "1910">
+			<place> храм в селе Пестрецы Казанского уезда </place>
+		</event>
+		<event type="work" from="1910" to = "1937">
+			<work_place> Троицкий храм в селе Михайловском Царевококшайского уезда Казанской губернии </work_place>
+			<work_title> настоятель </work_title>
+		</event>
+		<event type="arrest" when="13.12.1938">
+			<convicted> ВМН </convicted>
+			<judgment_date> 13.12.1938 </judgment_date>
+			<judgment_data> 15.02.1938 </judgment_data>
+			<judgment_place> в Марийской АССР </judgment_place>
+			<judgment_place> Йошкар-Ола </judgment_place>
+			<judgment> Расстрел </judgment>
+			<source> Книга памяти Республики Татарстан</source>
+		</event>
+	</person>
+	<source> https://base.memo.ru/person/show/533747 </source>
+	<source> http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3 </source>
+</biodes>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+	<fileDesc>
+		<title/>
+		<author>Ю.В. Кожевникова</author>
+		<publisher>
+			<name>Ю.В. Кожевникова</name>
+		</publisher>
+	</fileDesc>
+	<person>
+		<idno type="id">sandratskaya.xml</idno>
+		<persName>
+			<surname>Сандрацкая</surname>
+			<firstname>Мария</firstname>
+			<patronym>Карловна</patronym>
+		</persName>
+		<nationality>русский</nationality>
+		<gender>женщина</gender>
+		<event type="birth" when="1898">
+			<place_of_birth source="base.memo.ru">
+				<country>CCCР</country>
+				<province>Херсонская губ.</province>
+				<city>Одесса</city>
+			</place_of_birth>
+		</event>
+		<education>среднее</education>
+		<party> ВКП(б), с 1920 </party>
+		<place_of_service> 	III-й секретарь Выборгского райкома, ок. комвуз им.Свердлова </place_of_service>
+		<place_of_residence> г. Ленинград </place_of_residence>
+		<event type="arrest" when="09.10.1937">
+            <convicted> ОС НКВД СССР </convicted>
+			<judgment_date> 09.10.1937</judgment_date>
+			<accusation>ЧСИР</accusation>
+			<judgment>8 лет ИТЛ. В заключении в Томском лагере ЧСИР. Содержалась в г.Томск, в Ахунской ИТК №9 с 1939, в Яйском отделении Сиблага, =12.1947= освобождена</judgment>
+		</event>
+		<rehabilitation_date> 13.08.1955 </rehabilitation_date>
+		<source>Архив НИЦ "Мемориал" (Санкт-Петербург)</source>
+		<event type="missing" when="21.08.1944">
+		</event>
+    </person>
+	<source> https://base.memo.ru/person/show/2934249 </source>
+	<source> https://memoirs.memo.ru/memoir/show/id/160 </source>
+</biodes>

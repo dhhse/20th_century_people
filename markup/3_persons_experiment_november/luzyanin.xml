@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+	<fileDesc>
+		<title/>
+		<author>Ю.В. Кожевникова</author>
+		<publisher>
+			<name>Ю.В. Кожевникова</name>
+		</publisher>
+	</fileDesc>
+<person>
+	<idno type="id">luzyanin.xml</idno>
+		<persName>
+			<surname>Лузянин</surname>
+			<firstname>Николай</firstname>
+			<patronym>Николаевич</patronym>
+		</persName>
+		<nationality>русский</nationality>
+		<gender>мужчина</gender>
+		<event type="birth" when="22.12.1922">
+			<place_of_birth source="pamyat-naroda.ru">
+				<country> CCCР </country>
+				<region>Новосибирская обл.</region>
+				<region> Томская обл. </region>
+				<district> Пышкино-Троицкий р-н </district>
+				<district> Ачинский р-н </district>
+				<village> с. Абсагачево</village>
+			</place_of_birth>
+			<place_of_birth source="obd-memorial.ru">
+				<region> Новосибирская обл. </region>
+				<village> д. Абсогачево </village>
+			</place_of_birth>
+		</event>
+	<milirary_rank>красноармеец</milirary_rank>
+	<milirary_rank>гв. рядовой</milirary_rank>
+	<milirary_rank>лейтенант</milirary_rank>
+	<military_unit> пермской жд; 33 гв. сд (33 гв. сд); 84 сп (84 сп) </military_unit>
+	<reward>  Орден Отечественной войны II степени </reward>
+	<party> б/п </party>
+	<place_of_service> 	33-я Гвардейская стр.дивизия 2-й армии </place_of_service>
+	<event type="arrest" when="28.05.1945">
+		<judgment_date>12.06.1945</judgment_date>
+		<accusation>ст.58-07, измена Родине</accusation>
+		<judgment>10 лет, 3 года поражения в правах</judgment>
+	</event>
+	<rehabilitation_date> в мае 1958 </rehabilitation_date>
+	<source>Книга памяти Томской обл. </source>
+	<event type="missing" when="21.08.1944">
+	</event>
+</person>
+    <source> https://base.memo.ru/person/show/2382104 </source>
+	<source> https://obd-memorial.ru/html/info.htm?id=51052210 </source>
+	<source> https://pamyat-naroda.ru/heroes/memorial-chelovek_donesenie54299842/?static_hash=cc5e301a84cfcfdb25d9833b2ff509cf </source>
+</biodes>
