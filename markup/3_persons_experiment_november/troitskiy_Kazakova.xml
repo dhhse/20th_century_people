@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+    <file_desc>
+        <title/>
+        <author>Л.И. Казакова</author>
+        <publisher>
+            <name>Л.И. Казакова</name>
+        </publisher>
+        <sources>
+            <source type="published" author="Игумен Дамаскин (Орловский)" when="2005" place="Тверь" pages="10-11" source_name="fond">Жития новомучеников и исповедников Российских ХХ века. Февраль</source>
+            <source type="published" source_name="base">Книга памяти Республики Татарстан</source>
+            <source source_name="base" id="533747">https://base.memo.ru/person/show/533747</source>
+            <source source_name="fond" id="108">http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3</source>            
+        </sources>
+    </file_desc>
+    <person>
+        <full_name>
+            <first_name source_name="base">Андриян</first_name>
+            <first_name source_name="base">Андреян</first_name>
+            <first_name source_name="fond">Адриан</first_name>
+            <middle_name>Александрович</middle_name>
+            <last_name>Троицкий</last_name>
+            <raw_full_name source_name="base">ТРОИЦКИЙ АНДРИЯН (АНДРЕЯН) АЛЕКСАНДРОВИЧ</raw_full_name>
+            <raw_full_name source_name="fond">Адриан Троицкий</raw_full_name>
+        </full_name>
+        <nationality>
+            <nationality>русский</nationality>
+            <raw_nationality>русский</raw_nationality>
+        </nationality>
+    </person>
+    <events>
+        <event type="birth" when="1872" place="Алексеевский р-н, с. Билярск." source_name="base"/>
+        <event type="birth" when="12.06.1872" place="село Билярское Чистопольского уезда Казанской губернии" source_name="fond"/>
+        <event type="education">Чебоксарское духовное училище</event>
+        <event type="education">Чебоксарское городское училище</event>
+        <event type="job" when="1893" place="Соляновская церковноприходская школа">преподаватель</event>
+        <event type="job" when="1893" place="Михаило-Архангельском храм, Чебоксары">псаломщик</event>
+        <event type="job" when="1897-1899">армия</event>
+        <event type="job" when="1899" place="Покровский храм, Чебоксары">псаломщик</event>
+        <event type="job" when="1904-1910" place="Пестрецы, Казанский уезда">диакон</event>
+        <event type="job" when="1910-1937" place="Троицкий храм, село Михайловское, Царевококшайский уезд, Казанская губерния">настоятель</event>
+        <event type="arrest" when="1918">подозрение в участии в Княжнинском восстании</event>
+        <event type="arrest" when="28.12.1937" place="Йошкар-Ола">создание контрреволюционной группы, обложение прихожан непомерным налогом</event> 
+        <event type="sentence" when="13.02.1938" actor="НКВД">расстрел</event>
+        <event type="death" when="15.02.1938" source_name="fond"/>
+        <event type="death" when="13.12.1938" place="Марийская АССР" source_name="base"/>
+    </events>
+</biodes>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+    <file_desc>
+        <title/>
+        <author>Л.И. Казакова</author>
+        <publisher>
+            <name>Л.И. Казакова</name>
+        </publisher>
+        <sources>
+            <source type="published" source_name="base">Книга памяти Томской обл.</source>
+            <source source_name="base" id="2382104">https://base.memo.ru/person/show/2382104</source>
+            <source source_name="memoirs" id="160">https://memoirs.memo.ru/memoir/show/id/160</source> 
+            <source source_name="pamyat-naroda" id="54299842">https://pamyat-naroda.ru/heroes/memorial-chelovek_donesenie54299842/</source>    
+        </sources>
+    </file_desc>
+    <person>
+        <full_name>
+            <first_name>Николай</first_name>
+            <middle_name>Николаевич</middle_name>
+            <last_name>Лузянин</last_name>
+            <raw_full_name>Лузянин Николай Николаевич</raw_full_name>
+        </full_name>
+        <nationality>
+            <nationality>русский</nationality>
+            <raw_nationality>русский</raw_nationality>
+        </nationality>
+    </person>
+    <events>
+        <event type="birth" when="1922" place="Томская обл., Пышкино-Троицкий р-н, с. Апсагачево" source_name="base"/>
+        <event type="birth" when="1922" place="Новосибирская обл., д. Абсогачево" source_name="obd-memorial"/>
+        <event type="birth" when="22.12.1922" place="Апсагач" source_name="obd-memorial"/>
+        <event type="education" degree="начальное"/>
+        <event type="job" when="1944" place="Троицкий РВК, Новосибирская обл." source_name="obd-memorial">гв. рядовой</event>
+        <event type="job" place="33-я Гвардейская стр.дивизия 2-й армии" source_name="base">рядовой</event>
+        <event type="capture" when="27.08.1944" place="Куртовяны"/>
+        <event type="job" source_name="obd-memorial">лейтенант</event>
+        <event type="job" source_name="pamyat-naroda">красноармеец</event>
+        <event type="award">Орден Отечественной войны II степени</event>
+        <event type="party">б/п</event>
+        <event type="arrest" when="28.05.1945">ст.58-07, измена Родине</event>
+        <event type="sentence" when="12.06.1945">10 лет, 3 года поражения в правах</event>
+        <event type="exculpation" when="05.1958"/>
+    </events>
+</biodes>
