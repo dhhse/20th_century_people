@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+    <fileDesc>
+        <title/>
+        <author>П.Н. Янина</author>
+        <publisher>
+            <name>П.Н. Янина</name>
+        </publisher>
+    </fileDesc>
+    <person>
+        <idno type="id">troitskiyaa.xml</idno>
+        <persName>
+            <Last_name>Троицкий</Last_name>
+            <First_name>Адриан</First_name>
+            <Middle_name>Александрович</Middle_name>
+        </persName>
+        <event type="birth" when="1872-06-12">
+            <place>село Билярск Алексеевский район Казанской губернии</place>
+            <!-- В базе Новомученников место рождения - село Билярское Чистопольского уезда Казанской губернии-->
+        </event>
+        <event type="education" when="1910">
+            <Education_speciality>священник</Education_speciality>
+            <Education_entity>Казанская Духовная семинария</Education_entity>
+        </event>
+        <event type="job">
+            <Job_place>Троицкий храм в селе Михайловском Царевококшайского уезда Казанской губернии</Job_place>
+            <Job_title>настоятель Троицкого храма</Job_title>
+            <Start_Year>1910</Start_Year>
+            <End_Year>1937</End_Year>
+        </event>
+        <event type="arrest" when="1937-12-28">
+        </event>
+        <event type="trial" when="1937-02-13"> 
+            <text> Среди прочего его обвиняли в создании контрреволюционной группы и обложении прихожан непомерным налогом.
+                            13 февраля тройка НКВД приговорила отца Адриана к расстрелу</text>
+        </event>
+        <event type="Confession"> 
+            <Raw_Confession>не признает</Raw_Confession>
+            <text>Отец Адриан не признал себя виновным, сказав: «Никакой контрреволюционной работы я не проводил. 
+                            Хлебными налогами верующих я не обкладывал. Хлеб собирался по решению общины верующих»</text>
+        </event>
+        <event type="imprisonment">
+            <place>тюрьма города Йошкар-Ола</place>
+        </event>
+        <event type="death" cause="execution" when="1938-02-15">
+            <place>Марийская АССР</place>
+        </event>
+    </person>
+    <biography>
+        <text>В 1913 году отец Адриан был назначен старшим помощником Царевококшайского благочинного и вскоре возведен в сан протоиерея.
+            После прихода к власти большевиков отец Адриан был в 1918 году арестован по подозрению в участии в Княжнинском восстании. 
+            Однако обвинение не подтвердилось, и священник после двух недель нахождения под арестом был освобожден</text>
+    </biography>
+    <external_sources>
+        <source type="external_database_entry" ref="http://www.fond.ru/index.php?psx=4&amp;menu_id=352&amp;menu_parent_id=&amp;name_id=25&amp;person_id=108&amp;flag_view=3">
+            Запись в базе Новомученников</source>
+        <source type="https://base.memo.ru/person/show/533747">Запись в базе Международного Мемориала</source>
+    </external_sources>
+</biodes>
