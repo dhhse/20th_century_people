@@ -6,6 +6,13 @@ import requests
 import time
 import pika
 import secrets
+import pymongo
+
+INPUT_QUEUE = 'parse_blockade_person'
+
+def get_html_from_base(url): 
+    page_data = db_client['biographydb']['downloaded_pages'].find_one({'url': url})
+    return page_data['body']
 
 def get_text(contents: str) -> str:
     """ достаем текстовую статью с хтмл-странички """
@@ -93,10 +100,10 @@ def get_person_info(text: str) -> dict:
 def callback(ch, method, properties, body):
     #print(" [x] Received %r" % body)
     #print(type(body))
-    url = body
-    html_text = requests.get(url).text
+    url = body.decode('utf-8')
+    html_text = get_html_from_base(url)
     time.sleep(0.1)
-    print (get_person_info(get_text(html_text)))
+    print(get_person_info(get_text(html_text)))
 
 def main():
     credentials = pika.PlainCredentials(secrets.RABBITMQ_USER,
@@ -107,11 +114,15 @@ def main():
                                                   credentials = credentials)
     connection = pika.BlockingConnection(connection_params)
     channel = connection.channel()
-    channel.queue_declare(queue='to_parse')
-    channel.basic_consume(queue='to_parse', on_message_callback=callback, auto_ack=False)
+    channel.queue_declare(queue=INPUT_QUEUE)
+    channel.basic_consume(queue=INPUT_QUEUE, on_message_callback=callback, auto_ack=False)
     print(' [*] Waiting for messages. To exit press CTRL+C')
     channel.start_consuming()
 
 if __name__ == '__main__':
+    db_client = pymongo.MongoClient(secrets.MONGO_HOST,
+                            secrets.MONGO_PORT,
+                            username=secrets.MONGO_WRITER_USER,
+                            password=secrets.MONGO_WRITER_PASSWD)
     main()
 

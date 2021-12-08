@@ -7,9 +7,11 @@ import pika
 import secrets
 
 def download_page_callback(ch, method, properties, msg):
-    url = msg.decode('utf-8')
+    url_and_output_queue = msg.decode('utf-8').split('\t')
+    url = url_and_output_queue[0]
     print(f"Received url {url}")
     response = requests.get(url)
+    output_queue = url_and_output_queue[1]
     if response.status_code == 200:
         body = response.text
         now = datetime.datetime.now()
@@ -17,7 +19,7 @@ def download_page_callback(ch, method, properties, msg):
         print(f"Stored url {url} into DB")
 
         ch.basic_publish(exchange='',
-                          routing_key='to_parse',
+                          routing_key=output_queue,
                           body=url)
     else:
         print(f"Url {url} responded with HTTP-code {response.status_code}")
@@ -37,7 +39,7 @@ def main():
     channel.basic_consume(queue='to_download', auto_ack=False, on_message_callback=download_page_callback)
     channel.start_consuming()
     print('waiting')
-    channel.queue_declare(queue='to_parse')
+    channel.queue_declare(queue=output_queue)
 
 if __name__ == '__main__':
     db_client = pymongo.MongoClient(secrets.MONGO_HOST,
