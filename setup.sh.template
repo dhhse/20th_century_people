@@ -28,27 +28,29 @@ MONGO_READER_PASSWD='...'
 MONGO_ROOT_USER='root'
 MONGO_ROOT_PASSWD='...'
 
-################
+###
 
-docker run -d \
-  --restart unless-stopped \
-  --name mongo-srv \
-  -p ${MONGO_PORT}:27017 \
-  -v mongo-data:/data/db \
-    mongo --auth
+sudo ufw allow ${MONGO_PORT}
+sudo ufw allow ${RABBITMQ_PORT}
+sudo ufw allow ${RABBITMQ_MANAGEMENT_PORT}
+
+###
+
+RABBIT_IMAGE_TAG="3.9-management"
+MONGO_IMAGE_TAG="5.0.5"
+docker pull rabbitmq:${RABBIT_IMAGE_TAG}
+docker pull mongo:${MONGO_IMAGE_TAG}
+
+###
 
 docker run -d \
   --restart unless-stopped \
   --name rabbitmq-srv \
   -p ${RABBITMQ_PORT}:5672 -p ${RABBITMQ_MANAGEMENT_PORT}:15672 \
-  -v rabbitmq-log:/var/log/rabbitmq \   # возможно стоит удалить
+  -v rabbitmq-log:/var/log/rabbitmq \
   -v rabbitmq-data:/var/lib/rabbitmq \
   --hostname rabbitmq-host \
-  rabbitmq:3.9-management
-
-sudo ufw allow ${MONGO_PORT}
-sudo ufw allow ${RABBITMQ_PORT}
-sudo ufw allow ${RABBITMQ_MANAGEMENT_PORT}
+  rabbitmq:${RABBIT_IMAGE_TAG}
 
 docker exec rabbitmq-srv  rabbitmqctl add_vhost "${RABBITMQ_VHOST}"
 
@@ -69,7 +71,7 @@ docker exec rabbitmq-srv  rabbitmqctl set_user_tags "${RABBITMQ_ADMIN_USER}" mon
 #################################
 
 # Create admin users with access control disabled
-docker run  --name mongo-srv  --rm  -d  -v mongo-data:/data/db  -v mongo-config:/data/configdb  -p 27017:27017  mongo
+docker run  --name mongo-srv  --rm  -d  -v mongo-data:/data/db  -v mongo-config:/data/configdb  -p 27017:27017  mongo:${MONGO_IMAGE_TAG}
 docker exec -i mongo-srv mongosh <<EOF
     use admin
     db.createUser(
@@ -93,7 +95,7 @@ EOF
 docker stop mongo-srv
 
 # Authenticate as admin and create ordinary users in the respective DB
-docker run  --name mongo-srv  --rm  -d  -v mongo-data:/data/db  -v mongo-config:/data/configdb  -p 27017:27017  mongo  --auth
+docker run  --name mongo-srv  --rm  -d  -v mongo-data:/data/db  -v mongo-config:/data/configdb  -p 27017:27017  mongo:${MONGO_IMAGE_TAG}  --auth
 docker exec -i mongo-srv mongosh -u "${MONGO_ADMIN_USER}" -p "${MONGO_ADMIN_PASSWD}" --authenticationDatabase admin <<EOF
     use ${MONGO_DATABASE}
     db.createUser(
@@ -118,4 +120,10 @@ EOF
 docker stop mongo-srv
 
 # Just run mongo (authenticated)
-docker run  --name mongo-srv  -d  -v mongo-data:/data/db  -v mongo-config:/data/configdb  -p 27017:27017  mongo  --auth
+docker run -d \
+  --restart unless-stopped \
+  --name mongo-srv \
+  -p ${MONGO_PORT}:27017 \
+  -v mongo-data:/data/db \
+  -v mongo-config:/data/configdb \
+    mongo:${MONGO_IMAGE_TAG} --auth
