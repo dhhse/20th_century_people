@@ -39,8 +39,8 @@ def download_page_callback(ch, method, properties, msg, db=None):
 
 @retry.retry(pika.exceptions.AMQPConnectionError, delay=5, jitter=(1, 3), tries=-1)
 def consume(callback):
-    queue_connection = get_rabbit_connection()
-    channel = queue_connection.channel()
+    connection = get_rabbit_connection()
+    channel = connection.channel()
     channel.queue_declare(queue='to_download')
     channel.basic_consume(queue='to_download', auto_ack=False, on_message_callback=callback)
     try:

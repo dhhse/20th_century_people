@@ -45,8 +45,8 @@ def validate_record_callback(ch, method, properties, msg, db=None, logger=None, 
 
 @retry.retry(pika.exceptions.AMQPConnectionError, delay=5, jitter=(1, 3))
 def consume(callback):
-    queue_connection = get_rabbit_connection()
-    channel = queue_connection.channel()
+    connection = get_rabbit_connection()
+    channel = connection.channel()
     channel.queue_declare(queue='to_validate')
     channel.basic_consume(queue='to_validate', auto_ack=False, on_message_callback=callback)
     try:
