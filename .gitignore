@@ -1,3 +1,4 @@
 secrets.py
 setup.sh
 *.pyc
+__pycache__/
