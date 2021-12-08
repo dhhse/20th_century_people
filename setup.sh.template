@@ -1,0 +1,121 @@
+RABBITMQ_HOST='95.85.18.95'
+RABBITMQ_PORT=5672
+RABBITMQ_MANAGEMENT_PORT=15672
+RABBITMQ_VHOST='biographies'
+
+RABBITMQ_ADMIN_USER='biographyAdmin'
+RABBITMQ_ADMIN_PASSWD='...'
+
+# ToDo: revoke some rights from user
+RABBITMQ_USER='biographyUser'
+RABBITMQ_PASSWD='...'
+
+######
+
+MONGO_HOST='95.85.18.95'
+MONGO_PORT=27017
+MONGO_DATABASE='biographydb'
+
+MONGO_ADMIN_USER='biographyAdmin'
+MONGO_ADMIN_PASSWD='...'
+
+MONGO_WRITER_USER='biographyAdmin'
+MONGO_WRITER_PASSWD='...'
+
+MONGO_READER_USER='biographyReader'
+MONGO_READER_PASSWD='...'
+
+MONGO_ROOT_USER='root'
+MONGO_ROOT_PASSWD='...'
+
+################
+
+docker run -d \
+  --restart unless-stopped \
+  --name mongo-srv \
+  -p ${MONGO_PORT}:27017 \
+  -v mongo-data:/data/db \
+    mongo --auth
+
+docker run -d \
+  --restart unless-stopped \
+  --name rabbitmq-srv \
+  -p ${RABBITMQ_PORT}:5672 -p ${RABBITMQ_MANAGEMENT_PORT}:15672 \
+  -v rabbitmq-log:/var/log/rabbitmq \   # возможно стоит удалить
+  -v rabbitmq-data:/var/lib/rabbitmq \
+  --hostname rabbitmq-host \
+  rabbitmq:3.9-management
+
+sudo ufw allow ${MONGO_PORT}
+sudo ufw allow ${RABBITMQ_PORT}
+sudo ufw allow ${RABBITMQ_MANAGEMENT_PORT}
+
+docker exec rabbitmq-srv  rabbitmqctl add_vhost "${RABBITMQ_VHOST}"
+
+docker exec rabbitmq-srv  rabbitmqctl delete_user guest
+
+# Password is provided as a command line argument. Note that certain characters such as $, &, #, and so on
+# must be escaped to avoid special interpretation by the shell.
+docker exec rabbitmq-srv  rabbitmqctl add_user "${RABBITMQ_ADMIN_USER}" "${RABBITMQ_ADMIN_PASSWD}"
+docker exec rabbitmq-srv  rabbitmqctl add_user "${RABBITMQ_USER}" "${RABBITMQ_PASSWD}"
+
+# First ".*" for configure permission on every entity
+# Second ".*" for write permission on every entity
+# Third ".*" for read permission on every entity
+docker exec rabbitmq-srv  rabbitmqctl set_permissions --vhost "${RABBITMQ_VHOST}" "${RABBITMQ_ADMIN_USER}" ".*" ".*" ".*"
+docker exec rabbitmq-srv  rabbitmqctl set_permissions --vhost "${RABBITMQ_VHOST}" "${RABBITMQ_USER}" ".*" ".*" ".*"
+docker exec rabbitmq-srv  rabbitmqctl set_user_tags "${RABBITMQ_ADMIN_USER}" monitoring
+
+#################################
+
+# Create admin users with access control disabled
+docker run  --name mongo-srv  --rm  -d  -v mongo-data:/data/db  -v mongo-config:/data/configdb  -p 27017:27017  mongo
+docker exec -i mongo-srv mongosh <<EOF
+    use admin
+    db.createUser(
+        {
+            user: "${MONGO_ROOT_USER}",
+            pwd: "${MONGO_ROOT_PASSWD}",
+            roles: ["root"]
+        }
+    );
+    db.createUser(
+        {
+            user: "${MONGO_ADMIN_USER}",
+            pwd: "${MONGO_ADMIN_PASSWD}",
+            roles: [
+                { role: "userAdminAnyDatabase", db: "admin" },
+                { role: "readWriteAnyDatabase", db: "admin" }
+            ]
+        }
+    );
+EOF
+docker stop mongo-srv
+
+# Authenticate as admin and create ordinary users in the respective DB
+docker run  --name mongo-srv  --rm  -d  -v mongo-data:/data/db  -v mongo-config:/data/configdb  -p 27017:27017  mongo  --auth
+docker exec -i mongo-srv mongosh -u "${MONGO_ADMIN_USER}" -p "${MONGO_ADMIN_PASSWD}" --authenticationDatabase admin <<EOF
+    use ${MONGO_DATABASE}
+    db.createUser(
+        {
+            user: "${MONGO_WRITER_USER}",
+            pwd: "${MONGO_WRITER_PASSWD}",
+            roles: [
+                { role: "readWrite", db: "${MONGO_DATABASE}" }
+            ]
+        }
+    );
+    db.createUser(
+        {
+            user: "${MONGO_READER_USER}",
+            pwd: "${MONGO_READER_PASSWD}",
+            roles: [
+                { role: "read", db: "${MONGO_DATABASE}" }
+            ]
+        }
+    );
+EOF
+docker stop mongo-srv
+
+# Just run mongo (authenticated)
+docker run  --name mongo-srv  -d  -v mongo-data:/data/db  -v mongo-config:/data/configdb  -p 27017:27017  mongo  --auth
