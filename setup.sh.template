@@ -19,7 +19,7 @@ MONGO_DATABASE='biographydb'
 MONGO_ADMIN_USER='biographyAdmin'
 MONGO_ADMIN_PASSWD='...'
 
-MONGO_WRITER_USER='biographyAdmin'
+MONGO_WRITER_USER='biographyWriter'
 MONGO_WRITER_PASSWD='...'
 
 MONGO_READER_USER='biographyReader'
