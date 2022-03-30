@@ -50,6 +50,7 @@ if __name__ == '__main__':
     FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
     logging.basicConfig(format=FORMAT, level=logging.INFO)
     logger = logging.getLogger('workers_logger')
+
     cli = SampleWorkerCLI(logger=logger)
     cli.configure(sys.argv[1:])
     worker = SampleWorker(cli.secrets, cli.options, logger=logger)

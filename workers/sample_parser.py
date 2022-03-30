@@ -22,12 +22,19 @@ class SampleParser(AMQPWorkerHarness):
 
     def callback_list(self):
         return {
+            'SampleParser_deferred_seed': self.deferred_seed, # to make seed asynchronous
             'SampleParser_stage1': self.stage_1, # if necessary
             'SampleParser_stage2': self.stage_2, # if necessary
             'SampleParser_parse':  self.parse_and_store,    # obligatory
         }
 
     def seed(self):
+        # seed will send the only message, thus all the workers (both deferred_seed and all the rest)
+        # will be run immediately
+        self.send_message('SampleParser_deferred_seed', 'start')
+
+    @amqp_callback
+    def deferred_seed(self, msg): # we can ignore message
         # Seed pages which are to be downloaded
         next_stage_queue = 'SampleParser_stage1'
         for i in range(1000):
