@@ -31,7 +31,7 @@
 - Электронный биографический справочник «За Христа пострадавшие» ПСТГУ,
 - Духовенство русской православной церкви в 20 веке.
 
-Парсеры баз находятся в папке [`parsers`](https://github.com/dhhse/20th_century_people/tree/main/parsers). 
+Парсеры баз можно найти в папке [`parsers`](https://github.com/dhhse/20th_century_people/tree/main/parsers). Примеры подготовленных данных в формате json находятся в папке [`demo_all_bases`](https://github.com/dhhse/20th_century_people/tree/main/demo_all_bases).
 
 ## Установка
 Для работы потребуется установить Python 3 и docker.
