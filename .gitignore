@@ -2,3 +2,4 @@ secrets.py
 setup.sh
 *.pyc
 __pycache__/
+.DS_Store
