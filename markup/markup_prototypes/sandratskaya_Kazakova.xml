@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+    <file_desc>
+        <title/>
+        <author>Л.И. Казакова</author>
+        <publisher>
+            <name>Л.И. Казакова</name>
+        </publisher>
+        <sources>
+            <source type="published" author="Сандрацкая М.К." when="2000" place="Москва">Небольшой отрывок воспоминаний см.:  Дети на этапе // 30 октября / Издание Общества Мемориал. №3</source>
+            <source type="published" place="Санкт-Петербург" source_name="base">Архив НИЦ "Мемориал"</source>
+            <source source_name="base" id="2934249">https://base.memo.ru/person/show/2934249</source>
+            <source source_name="memoirs" id="160">https://memoirs.memo.ru/memoir/show/id/160</source>            
+        </sources>
+    </file_desc>
+    <person>
+        <full_name>
+            <first_name>Мария</first_name>
+            <middle_name>Карловна</middle_name>
+            <last_name>Сандрацкая</last_name>
+            <raw_full_name>Сандрацкая Мария Карловна</raw_full_name>
+        </full_name>
+    </person>
+    <events>
+        <event type="birth" when="1898" place="Херсонская губ., г. Одесса"/>
+        <event type="education" degree="гимназия" when="1914" place="Одесса"/>
+        <event type="job" place="Карпаты">медсестра 12-й армии</event>
+        <event type="job">работа в литературно-издательском отделе Наркомпроса</event>
+        <event type="job" when="1920">работа в женотделе Одесского губкома партии, в комиссии ГубЧК по борьбе с беспризорностью</event>
+        <event type="education" degree="среднее"/>
+        <event type="education" place="Москва">комвуз им. Я. М.Свердлова</event>
+        <event type="job" place="Донбасс"/>
+        <event type="job">работа в парторганизациях заводов и фабрик, в Петроградском и Выборгском райкомах партии</event>
+        <event type="party" when="1920">ВКП(б)</event>
+        <event type="job" place="ок. комвуз им.Свердлова">III-й секретарь Выборгского райкома</event>
+        <event type="living">г. Ленинград</event>
+        <event type="arrest" when="9.10.1937">ЧСИР</event>
+        <event type="sentence" when="9.10.1937" actor="ОС НКВД СССР">8 лет ИТЛ в заключении в Томском лагере ЧСИР</event>
+        <event type="serving" when="1939" place="г.Томск, Ахунская ИТК №9, в Яйском отделении Сиблага"/>
+        <event type="release" when="12.1947"/>
+        <event type="exculpation" when="13.08.1955" actor="ВК ВС СССР"/>
+    </events>
+</biodes>

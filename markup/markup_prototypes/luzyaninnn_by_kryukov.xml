@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+    <fileDesc>
+        <title/>
+        <author>А.И. Крюков</author>
+        <publisher>
+            <name>А.И. Крюков</name>
+        </publisher>
+    </fileDesc>
+    <person>
+        <idno type="id">luzyaninnn.xml</idno>
+        <id type="obd-memorial">272072745</id>
+        <id type="base.memo">2382104</id>
+        <main_source>https://base.memo.ru/person/show/2382104</main_source>
+        <additional_source>https://obd-memorial.ru/html/info.htm?id=272072745</additional_source>
+        <additional_source>https://pamyat-naroda.ru/heroes/memorial-chelovek_donesenie54299842/?backurl=%2Fheroes%2F%3Fadv_search%3Dy%26last_name%3D%D0%9B%D1%83%D0%B7%D1%8F%D0%BD%D0%B8%D0%BD%26first_name%3D%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%26middle_name%3D%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87%26date_birth_from%3D1922%26static_hash%3D9b0897399d881d7c908f497e86831dff%26group%3Dall%26types%3Dpamyat_commander%3Anagrady_nagrad_doc%3Anagrady_uchet_kartoteka%3Anagrady_ubilein_kartoteka%3Apamyat_voenkomat%3Apotery_vpp%3Apamyat_zsp_parts%3Akld_polit%3Akld_upk%3Akld_vmf%3Apotery_doneseniya_o_poteryah%3Apotery_gospitali%3Apotery_utochenie_poter%3Apotery_spiski_zahoroneniy%3Apotery_voennoplen%3Apotery_iskluchenie_iz_spiskov%3Apotery_kartoteki%3Asame_doroga%26page%3D1%26rank%3D%D0%A0%D1%8F%D0%B4%D0%BE%D0%B2%D0%BE%D0%B9</additional_source>
+        <persName>
+            <surname>Лузянин</surname>
+            <firstname>Николай</firstname>
+            <patronym>Николаевич</patronym>
+        </persName>
+        <event type="birth" when="22.12.1922">
+            <birth_place>
+                <country>СССР</country>
+                <republic>РСФСР</republic>
+                <region>Томская область</region>
+                <district>Пышкино-Троицкий район</district>
+                <district data_source='pamyat-naroda.ru'>Ачинский район</district>
+                <viillage>село Апсагачево</viillage>
+                <region data_source='pamyat-naroda.ru'>Новосибирская область</region>
+                <village>Абсогачево</village>
+            </birth_place>
+        </event>
+        <gender>мужчина</gender>
+        <nationality>русский</nationality>
+        <citizenship>СССР</citizenship>
+        <social_origin>-</social_origin>
+        <education type='elementary'>начальное</education>
+        <party_affiliation>б/п</party_affiliation>
+        <work>33-я Гвардейская стр.дивизия 2-й армии, рядовой</work>
+        <event type='arrest' when='28.05.1945'></event>
+        <event type='judgement' when='12.06.1945'>ст.58-07, измена Родине
+            <punishment>10 лет, 3 года поражения в правах</punishment>
+            <rehabilitation>в мае 1958</rehabilitation>
+        </event>
+        <source>Книга памяти Томской обл.</source>
+        <place_of_military_conscription where='Новосибирская обл., Пышкино-Троицкий р-н;' when='1944' data_sourse='pamyat-naroda.ru'>
+            Пышкино-Троицкий РВК</place_of_military_conscription>
+        <military_rank>красноармеец</military_rank>
+        <military_rank>гв. рядовой</military_rank>
+        <military_rank>лейтенант</military_rank>
+        <military_unit>пермской жд; 33 гв. сд (33 гв. сд); 84 сп (84 сп)</military_unit>
+        <event type='judgement' when='02.06.1942' data_source='https://obd-memorial.ru/html/info.htm?id=51052210'>осужден</event>
+        <event type='captivity' where='Куртовяны' camp='шталаг I B' number='53192' 
+            data_source='https://obd-memorial.ru/html/info.htm?id=272072745' when="21.08.1944">попал в плен</event>
+        <event type='reward' when='06.05.1989' data_source='https://pamyat-naroda.ru/'>Орден Отечественной войны II степени</event>
+    </person>
+</biodes>

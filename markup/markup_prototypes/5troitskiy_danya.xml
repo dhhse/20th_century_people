@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+  <fileDesc>
+    <title/>
+    <author>Д.А. Скоринкин</author>
+    <publisher>
+      <name>Д.А. Скоринкин</name>
+    </publisher>
+  </fileDesc>
+  <person>
+    <idno type="id">5troitskiy</idno>
+    <persName>
+      <surname>Троицкий</surname>
+      <firstname>Адриан</firstname>
+      <firstname>Андриян</firstname>
+      <firstname>Андреян</firstname>
+      <patronym>Александрович</patronym>
+    </persName>
+    <education code="middle">среднее</education>
+    <life_events>
+      <event type="birth" when="1872-06-12">
+        <place>
+          <region code="kazgub">Казанская губерния</region>
+          <subregion>Чистопольский уезд</subregion>
+          <district>Алексеевский р-н,</district>
+          <village>Билярское</village>
+        </place>
+      </event>
+      <event type="graduation" when="1890">
+        <description>сдал экзамен на псаломщика</description>
+      </event>
+      <event type="graduation" when="1893">
+        <description>сдал экзамен на на сельского учителя</description>
+      </event>
+      <event type="employment" from="1893" to="1897">
+        <description>поступил преподавателем в Соляновскую церковноприходскую школу</description>
+      </event>
+
+      <event type="conscription" when="1897">
+        <place/>
+      </event>
+      <event type="army_service" from="1897" to="1899">
+        <place/>
+      </event>
+
+      <event type="employment" from="1899" to="1902">
+        <place>Чебоксары</place>
+        <description>поступил псаломщиком в Покровский храм в городе Чебоксары</description>
+      </event>
+
+      <event type="graduation" when="1893">
+        <place>Казань</place>
+        <description>сдал экзамен на диакона комиссии при Казанской Духовной семинарии</description>
+      </event>
+
+      <event type="promotion" when="1903">
+        <description>в 1903 году был рукоположен во диакона</description>
+      </event>
+      <event type="employment" from="1904" to="1910">
+        <place>село Пестрецы Казанского уезда</place>
+        <description>служил в храме в селе Пестрецы Казанского уезда</description>
+      </event>
+
+      <event type="employment" from="1910" to="1937">
+        <place>село Михайловское Царевококшайского уезда Казанской губернии</place>
+        <description>назначен настоятелем Троицкого храма в селе Михайловском Царевококшайского
+          уезда Казанской губернии, где прослужил до своего ареста в 1937 годуназначен настоятелем
+          Троицкого храма в селе Михайловском Царевококшайского уезда Казанской губернии, где
+          прослужил до своего ареста в 1937 году</description>
+      </event>
+
+      <event type="promotion" when="1913">
+        <description>назначен старшим помощником Царевококшайского благочинного и вскоре возведен в
+          сан протоиерея</description>
+      </event>
+
+      <event type="arrest" when="1918">
+        <description>арестован по подозрению в участии в Княжнинском восстании. Однако обвинение не
+          подтвердилось, и священник после двух недель нахождения под арестом был
+          освобожден</description>
+      </event>
+
+      <event type="arrest" when="1937-12-28">
+        <place>Йошкар-Ола</place>
+      </event>
+      <event type="sentence" when="1938-13-02">
+        <sentence>ВМН</sentence>
+        <sentencer>Тройка НКВД</sentencer>
+      </event>
+      <event type="execution" when="1938-15-02" when_alt="1938-13-12">
+        <place>Марийская АССР</place>
+      </event>
+    </life_events>
+  </person>
+  <external_sources>
+    <source type="external_database_entry" base="#martyrs"
+      ref="http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3"
+      > Запись в базе Новомучеников</source>
+    <source type="external_database_entry" base="#memo"
+      ref="https://base.memo.ru/person/show/533747">Запись в базе Межднародного Мемориала</source>
+  </external_sources>
+</biodes>

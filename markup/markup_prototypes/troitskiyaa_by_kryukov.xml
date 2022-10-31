@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+    <fileDesc>
+        <title/>
+        <author>А.И. Крюков</author>
+        <publisher>
+            <name>А.И. Крюков</name>
+        </publisher>
+    </fileDesc>
+    <person>
+        <idno type="id">troitskiiaa.xml</idno>
+        <id type="fond.ru"></id>
+        <id type="base.memo">533747</id>
+        <main_source>https://base.memo.ru/person/show/533747</main_source>
+        <persName>
+            <raw_full_name>ТРОИЦКИЙ АНДРИЯН (АНДРЕЯН) АЛЕКСАНДРОВИЧ</raw_full_name> 
+            <surname>Троицкий</surname>
+            <firstname>Андриян</firstname>
+            <firstname>Андреян</firstname>
+            <patronym>Александрович</patronym>
+        </persName>
+        <event type="birth" when="12.06.1872">
+            <birth_place>
+                <country>Российская империя</country>
+                <republic></republic>
+                <region>Казанская губерния</region>
+                <district>Чистопольский уезд</district>
+                <district>Алексеевский р-н</district>
+                <city>Билярск</city>
+                <data_source>http://www.fond.ru/index.php?psx=4&menu_id=352&menu_parent_id=&name_id=25&person_id=108&flag_view=3</data_source>
+            </birth_place>
+        </event>
+        <gender>мужчина</gender>
+        <nationality>русский</nationality>
+        <citizenship>СССР</citizenship>
+        <social_origin>-</social_origin>
+        <education type='elementary'>Чебоксарское духовное училище</education>
+        <education status='not ended'>Чебоксарское городское училище</education>
+        <event type='exam' when='1890'>псаломщик</event>
+        <event type='exam' when='1893'>сельский учитель</event>
+        <work where='Соляновскую церковноприходскую школу' when="">преподаватель</work>
+        <work where='Михаило-Архангельский храм, Чебоксары'>псаломщик</work>
+        <event type='conscription' when='1897'>призыв в армию</event>
+        <work where='Покровский храм, Чебоксары' when='1899'>псаломщик</work>
+        <event type='exam' where='Казанская Духовная семинария' when='1902'>диакон</event>
+        <work where='храм в селе Пестрецы Казанского уезда' when='1904-1910'>диакон</work>
+        <event type='exam' when='1910'>священник</event>
+        <work where='Троицкий храм в селе Михайловском Царевококшайского уезда Казанской губернии' when='1910-1937'>настоятель</work>
+        <work when="1913">старший помощник Царевококшайского благочинного</work>
+        <event type='arrest' accusation='по подозрению в участии в Княжнинском восстании' when="1918"> 
+            после двух недель нахождения под арестом был освобожден</event>
+        <event type='arrest' when='28.12.1937' accusation='созданиеконтрреволюционной группы и обложении прихожан непомерным налогом'>
+            заключен в тюрьму в городе Йошкар-Ола</event>
+        <event type='execution' when='15.02.1938'>расстрелян</event>
+        <event type='execution' when='13.12.1938' where='Марийская АССР' data_source='https://base.memo.ru/person/show/533747'>ВМН</event>
+        <source>Книга памяти Республики Татарстан</source>
+    </person>
+</biodes>

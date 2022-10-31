@@ -1,0 +1,48 @@
+
+<person main_id="9">  
+	<id type="memoirs">160</id>
+	<id type="base">2934249</id>
+	<main_source>https://base.memo.ru/person/show/2934249</main_source> <!-- источник по умолчанию -->
+    	<full_name> 
+		<raw_full_name>Сандрацкая Мария Карловна</raw_full_name> 
+		<first_name>Мария</first_name>
+		<middle_name>Карловна</middle_name>
+		<last_name>Сандрацкая</last_name>
+	</Full_name>
+	<Gender>female</Gender> 
+	<nationality>русская</nationality>
+	<citizenship>СССР</citizenship>
+	<education level="higher"> <!-- в base.memo среднее, хотя окончила педвуз?>
+		<entity source="memoirs" to="----1914" city="Одесса">гимназия</entity>
+		<entity source="memoirs">Комвуз им. Я.М. Свердлова</entity> 
+	</education>
+	<occupation>III-й секретарь Выборгского райкома, ок. комвуз им.Свердлова</occupation>
+	<address>Ленинград</address>
+	<event type="birth" when="----1898">
+	<place>
+		<Country>СССР</Country> <!-- тут хорошо бы не просто строку, а выбор из списка, и в республиках тоже -->
+		<Republic>Украинская ССР</Republic>
+		<Region type="gubernia">Херсонская</Region> <!-- добавила типы населенных пунктов, их тоже можно прописать?? -->
+		<City type="city">Одесса</City>
+	</place>
+	</event>
+	<event type="judgement" arrest_date="1937-10-09">	
+		<article num="58-1б"> ст.58-1 "б" УК РСФСР </article>
+		<court>ОС НКВД СССР</court>
+		<judgement years="10">8 лет ИТЛ</judgement>
+	</event>
+	<event type="rehabilitation" reh_date="1955-08-13">	 
+		<court>ВК ВС СССР</court>
+	</event>
+	<event type="serving">
+		<camp region="tomskaya" from="1939----" to="1947-12--">Томский лагерь ЧСИР<camp> 
+	</event>
+	<extra_sources>
+		<source name="memoirs">https://memoirs.memo.ru/memoir/show/id/160</source>
+	</extra_sources>
+	<mentioned>
+		<person type="husband" base_id="2738133">Горб Василий Иванович</person> 
+	</mentioned>
+	<published_source> Архив НИЦ "Мемориал" (Санкт-Петербург) </published_source>
+</person> 
+

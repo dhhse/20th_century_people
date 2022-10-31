@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+    <fileDesc>
+        <title/>
+        <author>П.Н. Янина</author>
+        <publisher>
+            <name>П.Н. Янина</name>
+        </publisher>
+    </fileDesc>
+    <person>
+        <idno type="id">sandratskayamk.xml</idno>
+        <persName>
+            <Last_name>Сандрацкая</Last_name>
+            <First_name>Мария</First_name>
+            <Middle_name>Карловна</Middle_name>
+        </persName>
+        <event type="birth" when="1898">
+            <place>Херсонская губ., г. Одесса</place>
+        </event>
+        <event type="education">
+            <Education_entity>Коммунистический университет имени Я. М. Свердлова</Education_entity>
+             <!--Комвуз указан только в каталоге мемуаров, в базе данных жертв полит. репрессий образование указано как среднее-->
+        </event>
+        <event type="party">
+            <Raw_Party>ВКП(б)</Raw_Party>
+        </event>
+        <event type="job">
+            <Job_place>Выборгский райком</Job_place>		
+            <Job_title>III-й секретарь Выборгского райкома</Job_title>
+        </event>
+        <event type="arrest" when="1937-10-09"> <!--В каталоге мемуаров дата ареста - 29 октября 1937-->
+            <place>Ленинград</place>
+        </event>
+        <event type="imprisonment">
+            <place>Ленинградская Арсенальная тюрьма</place>
+            <place>Томск, Ахунская ИТК №9</place>
+            <place>Сиблаг, Яйский лагерный пункт</place>
+        </event>
+        <event type="release" when="1947-12">
+        </event>
+        <event type="rehabilitation" when="1955">
+        </event>
+    </person>
+    <biography>
+        <text>Окончание семи классов гимназии в Одессе в июне 1914 г. Медицинские курсы. 
+            Медсестра 12-й армии в Карпатах. Февральская революция, демобилизация, возвращение в Одессу. 
+            Переезд к сестре матери в Москву, работа в литературно-издательском отделе Наркомпроса. 
+            В 1920-е годы работа в женотделе Одесского губкома партии, в комиссии ГубЧК по борьбе с беспризорностью. 
+            Направление на учебу в Комвуз им. Я. М.Свердлова в Москву, знакомство и дружба с В. И. Горбом. 
+            Окончание Комвуза и работа в Донбассе. Замужество и переезд в Ленинград. 
+            Работа в парторганизациях заводов и фабрик, в Петроградском и Выборгском райкомах партии</text>
+    </biography>
+    <external_sources>
+        <source type="external_database_entry" ref="https://memoirs.memo.ru/memoir/show/id/160">Запись в каталоге мемуалов Мемориала</source>
+        <source type="external_database_entry" ref="https://base.memo.ru/person/show/2934249">Запись в базе жертв полит. репрессий</source>
+    </external_sources>
+</biodes>

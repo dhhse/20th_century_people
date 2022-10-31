@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+  <fileDesc>
+    <title/>
+    <author>Д.А. Скоринкин</author>
+    <publisher>
+      <name>Д.А. Скоринкин</name>
+    </publisher>
+  </fileDesc>
+  <person>
+    <idno type="id">4sandratskaya</idno>
+    <persName>
+      <surname>Сандрацкая</surname>
+      <firstname>Мария</firstname>
+      <patronym>Карловна</patronym>
+    </persName>
+    <party_membership code="vkpb">ВКП(б), с 1920</party_membership>
+    <education code="middle">среднее</education>
+    <life_events>
+      <event type="birth" when="1898">
+        <place><region>Херсонская губ.</region>, г. <city>Одесса</city></place>
+      </event>
+      <event type="childbirth" when="1925">
+        <event_description>рождение дочери</event_description>
+      </event>
+      <event type="childbirth" when="1927">
+        <event_description>рождение дочери</event_description>
+      </event>
+      <event type="childbirth" when="1929">
+        <event_description>рождение сына</event_description>
+      </event>
+      <event type="arrest" when="1937-10-09">
+        <place/>
+      </event>
+      <event type="sentence" when="1937-10-09">
+        <!--<sentence article="58">ст.58-07, измена Родине</sentence> -->
+        <sentence>8 лет ИТЛ</sentence>
+        <sentencer>ОС НКВД СССР</sentencer>
+      </event>
+      <event type="prison_term" from="1937" to="1947-12">
+        <description>В заключении в Томском лагере ЧСИР. Содержалась в г.Томск, в Ахунской ИТК №9 с
+          1939, в Яйском отделении Сиблага, =12.1947= освобождена</description>
+      </event>
+      <event type="rehabilitation" when="1955-08-13">
+        <rehabilitation_org>ВК ВС СССР</rehabilitation_org>
+      </event>
+    </life_events>
+  </person>
+  <external_sources>
+    <source type="external_database_entry" base="#memoirs"
+      ref="https://memoirs.memo.ru/memoir/show/id/160"> Запись в базе "Каталог воспоминаний архива
+      Мемориала"</source>
+    <source type="external_database_entry" base="#memo"
+      ref="https://base.memo.ru/person/show/2934249">Запись в базе Межднародного Мемориала</source>
+  </external_sources>
+</biodes>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biodes version="1.0.1">
+    <fileDesc>
+        <title/>
+        <author>А.И. Крюков</author>
+        <publisher>
+            <name>А.И. Крюков</name>
+        </publisher>
+    </fileDesc>
+    <person>
+        <idno type="id">sandratskayamp.xml</idno>
+        <id type="memoirs.memo">160</id>
+        <id type="base.memo">2934249</id>
+        <main_source>https://base.memo.ru/person/show/2934249</main_source>
+        <persName>
+            <raw_full_name>САНДРАЦКАЯ МАРИЯ КАРЛОВНА</raw_full_name> 
+            <surname>Сандрацкая</surname>
+            <firstname>Мария</firstname>
+            <patronym>Павловна</patronym>
+        </persName>
+        <event type="birth" when="1898">
+            <birth_place>
+                <country>Российская империя</country>
+                <republic>-</republic>
+                <region>Херсонская губерния</region>
+                <district>-</district>
+                <city>Одесса</city>
+                <data_source>https://base.memo.ru/person/show/2934249</data_source>
+            </birth_place>
+        </event>
+        <gender>женщина</gender>
+        <nationality>-</nationality>
+        <citizenship>СССР</citizenship>
+        <social_origin>-</social_origin>
+        <education>среднее</education>
+        <party_affiliation since='1920'>ВКП(б)</party_affiliation>
+        <university sourse="https://memoirs.memo.ru/memoir/show/id/160">Комвуз им. Я. М.Свердлова, Москва</university>
+        <husband sourse="https://memoirs.memo.ru/memoir/show/id/160">В.И. Горб</husband>
+        <work>литературно-издательский отдел Наркомпрос</work>
+        <work when="1920-ые">женотдел Одесского губкома партии</work>
+        <work>комиссии ГубЧК по борьбе с беспризорностью</work>
+        <work>III-й секретарь Выборгского райкома, ок. комвуз им.Свердлова</work>
+        <location>Ленинград</location>
+        <event type="arrest" when="1937-10-09">
+            <allegation>ЧСИР</allegation>
+            <verdict by="ОС НКВД СССР">8 лет ИТЛ>а</verdict>
+        </event>
+        <event type="imprisonment" where="Томский лагерь ЧСИР"></event>
+        <event type="imprisonment" where="Ахунская ИТК №9, Яйское отделение Сиблага" since="1939" release="12.1947"></event>
+        <event type="rehabilitation" when="1956-09-24" by="ВК ВС СССР"</event>
+    </person>
+</biodes>
